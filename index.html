@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Main</title>
   </head>
   <body class="body">
@@ -23,7 +23,7 @@
       <div class="conteiner main-nav">
         <nav class="top-navigation">
           <a class="logo" href="./index.html" lang="en">
-            <span class="logo-web">Web</span
+            <span class="footer__logo-web">Web</span
             ><span class="logo-studio">Studio</span></a
           >
           <ul class="menu">
@@ -489,64 +489,67 @@
 
 
     <!--Далі йдемо до підвалу-->
-    <footer class="footer-main">
-      <div class="conteiner footer-parts">
-        <div class="footer-left-part">
-          <a class="logo-button" href="/." lang="en">
-            <span class="logo-web">Web</span
-            ><span class="logo-studio logo-studio-footer">Studio</span>
+    
+    <!-- !!!!!!!!!!!   FOOTER ПЕРЕПИСЫВАЕМ ЧЕРЕЗ БЭМ   !!!!!!!!!!!!!!!!!! -->
+
+    <footer class="footer">
+      <div class="footer__wraper conteiner ">
+        <div class="footer__contacts">
+          <a class="footer__logo" href="/." lang="en">
+            <span class="footer__logo-web">Web</span
+            ><span class="footer__logo-studio logo-studio">Studio</span>
           </a>
-          <address class="father-adress">
-            <ul class="footer-adress-menu">
-              <li class="footer-links">
+          <address class="footer__adress">
+            <ul class="footer__list-adress">
+              <li class="footer__item-adress">
                 <a
-                  class="footer-contact-link mailto"
+                  class="footer__link-adress mailto"
                   href="https://goo.gl/maps/aKqt5xky7KFVWU1r5"
                   target="_blank"
                   rel="noopener noreferrer"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="footer-links">
-                <a class="footer-contact-link" href="mailto:info@example.com"
+              <li class="footer__item-adress">
+                <a class="footer__link-adress" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="footer-links">
-                <a class="footer-contact-link" href="tel:+380991111111"
+              <li class="footer__item-adress">
+                <a class="footer__link-adress" href="tel:+380991111111"
                   >+38 099 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-rigth-part">
-          <p class="right-text">приєднуйтесь</p>
-          <ul class="right-item">
-            <li class="rigth-list">
-              <a href="" class="right-link">
-                <svg class="right-icon" width="20" height="20">
+        <div class="footer__add">
+          <p class="footer__text-add">приєднуйтесь</p>
+          <ul class="footer__list-add">
+            <li class="footer__item-add">
+              <a href="" class="footer__link-add">
+                <svg class="footer__icon-add" width="20" height="20">
                   <use href="./img/svg/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="rigth-list">
-              <a href="" class="right-link">
-                <svg class="right-icon" width="20" height="20">
+            <li class="footer__item-add">
+              <a href="" class="footer__link-add">
+                <svg class="footer__icon-add" width="20" height="20">
                   <use href="./img/svg/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="rigth-list">
-              <a href="" class="right-link">
-                <svg class="right-icon" width="20" height="20">
+            <li class="footer__item-add">
+              <a href="" class="footer__link-add">
+                <svg class="footer__icon-add" width="20" height="20">
                   <use href="./img/svg/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="rigth-list">
-              <a href="" class="right-link">
-                <svg class="right-icon" width="20" height="20">
+            <li class="footer__item-add">
+              <a href="" class="footer__link-add">
+                <svg class="footer__icon-add" width="20" height="20">
                   <use href="./img/svg/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -554,11 +557,11 @@
           </ul>
         </div>
         <!-- NEW DIV From HW6 Sign Us -->
-        <div class="sign-part">
-            <p class="sign-part-text">Підпишіться на розсилку</p>
-            <form action="#" class="sign-part-form">
-              <input type="email" name="email" placeholder="E-mail" class="sign-input">
-              <button type="submit" class="sign-part-button">
+        <div class="footer__sign">
+            <p class="footer__text-sign">Підпишіться на розсилку</p>
+            <form action="#" class="footer__form">
+              <input type="email" name="email" placeholder="E-mail" class="footer__input">
+              <button type="submit" class="footer__btn">
                 Підписатися
                 <svg class="sign-icon" width="24" height="24">
                   <use href="./img/svg/icons.svg#icon-icon-send"></use>
