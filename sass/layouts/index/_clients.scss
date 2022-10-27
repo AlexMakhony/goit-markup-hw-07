@@ -43,20 +43,16 @@
     border-radius: 4px;
     box-sizing: border-box;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      
+    &:hover,
+    &:focus {
+      border-color: var(--blue-color);
+    }
+    &:hover .logo-clients,
+    &:focus .logo-clients {
+      fill: var(--blue-color);
   }
-  
+  }
   .logo-clients {
     fill: var(--fill-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .link-clients:hover,
-  .link-clients:focus {
-    border-color: var(--blue-color);
-  }
-  
-  .link-clients:hover .logo-clients,
-  .link-clients:focus .logo-clients {
-    fill: var(--blue-color);
   }

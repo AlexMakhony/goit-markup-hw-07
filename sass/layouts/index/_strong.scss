@@ -28,18 +28,14 @@
     background-color: var(--section-second);
     border-radius: 4px;
     transition: drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .icon-bests:focus,
-  .icon-bests:hover {
+    &:focus,
+    &:hover {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    
+    }
   }
-  
   .bests-list:not(:last-child) {
     margin-right: 30px;
   }
-  /*Нижче я вказав фонт вейт 400, бо за замовченням я поставив 500*/
   .text-strong-item {
     font-weight: 400;
     line-height: 1.71;

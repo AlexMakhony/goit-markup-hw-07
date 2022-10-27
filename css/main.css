@@ -81,27 +81,23 @@ img {
   padding-right: 15px;
 }
 
-.top-header {
+.header {
   border-bottom: 1px solid var(--header-border);
 }
-
-.main-nav {
+.header__container {
   display: flex;
   align-items: center;
 }
-
-.top-navigation {
+.header__nav {
   display: flex;
   align-items: center;
 }
-
-.logo {
+.header__link-logo {
   text-decoration: none;
   list-style-type: none;
   margin-right: 93px;
 }
-
-.footer__logo-web {
+.header__logo-web {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -109,26 +105,21 @@ img {
   color: var(--blue-color);
   text-decoration: none;
 }
-
-.logo-studio {
+.header__logo-studio {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--brand-color);
 }
-
-/*      Li       */
-.menu {
+.header__menu-nav {
   list-style-type: none;
   display: flex;
 }
-
-.menu-item:not(:last-child) {
+.header__item-nav:not(:last-child) {
   margin-right: 50px;
 }
-
-.menu-link {
+.header__link-nav {
   position: relative;
   display: block;
   line-height: 1.14;
@@ -138,13 +129,10 @@ img {
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.menu-link:focus,
-.menu-link:hover {
+.header__link-nav:focus, .header__link-nav:hover {
   color: var(--blue-color);
 }
-
-.menu-link.current::after {
+.header__link-nav.current::after {
   content: "";
   display: block;
   margin-bottom: -1px;
@@ -157,30 +145,22 @@ img {
   opacity: 1;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.current {
-  color: var(--blue-color);
-}
-
-.menu-contacts {
+.header__menu-contacts {
   display: flex;
   align-items: center;
   margin-left: auto;
   list-style-type: none;
 }
-
-.contacts-link:not(:first-child) {
+.header__item-contacts:not(:first-child) {
   margin-left: 50px;
 }
-
-.nav-icon {
+.header__icon {
   box-sizing: border-box;
   fill: currentColor;
   margin-right: 10px;
   margin-bottom: 0;
 }
-
-.contacts-link-phone-mail {
+.header__link-contacts {
   display: flex;
   align-items: center;
   line-height: 1.14;
@@ -188,11 +168,11 @@ img {
   color: var(--gray-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header__link-contacts:focus, .header__link-contacts:hover, .header__icon:hover, .header__icon:focus {
+  color: var(--blue-color);
+}
 
-.contacts-link-phone-mail:focus,
-.contacts-link-phone-mail:hover,
-.nav-icon:hover,
-.nav-icon :focus {
+.current {
   color: var(--blue-color);
 }
 
@@ -243,9 +223,7 @@ img {
   border: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.try-button:hover,
-.try-button:focus {
+.try-button:hover, .try-button:focus {
   background: var(--try-button-focus);
 }
 
@@ -280,9 +258,7 @@ img {
   border-radius: 4px;
   transition: drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.icon-bests:focus,
-.icon-bests:hover {
+.icon-bests:focus, .icon-bests:hover {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -290,7 +266,6 @@ img {
   margin-right: 30px;
 }
 
-/*Нижче я вказав фонт вейт 400, бо за замовченням я поставив 500*/
 .text-strong-item {
   font-weight: 400;
   line-height: 1.71;
@@ -343,26 +318,38 @@ img {
   color: var(--white-color);
 }
 
-/*Четверт секція "Наша команда"*/
 .team {
   background-color: var(--our-team-bg);
 }
-
 .team-menu {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
 }
-
 .team-members {
   background-color: var(--white-color);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 .team-discription {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.team-name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--button-portfolio-color);
+}
+.team-profession {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--gray-color);
 }
 
 .social-items {
@@ -390,9 +377,7 @@ img {
   color: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-link-push:hover,
-.social-link-push:focus {
+.social-link-push:hover, .social-link-push:focus {
   background-color: var(--blue-color);
   color: var(--white-color);
 }
@@ -400,28 +385,8 @@ img {
 .social-links {
   fill: currentColor;
 }
-
-.social-links:hover,
-.social-links:focus {
+.social-links:hover, .social-links:focus {
   fill: var(--white-color);
-}
-
-.team-name {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  color: var(--button-portfolio-color);
-}
-
-.team-profession {
-  margin-bottom: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  color: var(--gray-color);
 }
 
 /* NEW section CLIENTS */
@@ -471,23 +436,18 @@ img {
   box-sizing: border-box;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.link-clients:hover, .link-clients:focus {
+  border-color: var(--blue-color);
+}
+.link-clients:hover .logo-clients, .link-clients:focus .logo-clients {
+  fill: var(--blue-color);
+}
 
 .logo-clients {
   fill: var(--fill-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-clients:hover,
-.link-clients:focus {
-  border-color: var(--blue-color);
-}
-
-.link-clients:hover .logo-clients,
-.link-clients:focus .logo-clients {
-  fill: var(--blue-color);
-}
-
-/* Далі йдемо до підвалу */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -510,6 +470,9 @@ img {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer__link-adress:focus, .footer__link-adress:hover {
+  color: var(--blue-color);
+}
 
 .footer__item-adress:not(:last-child) {
   margin-bottom: 9px;
@@ -519,12 +482,16 @@ img {
   color: var(--white-color);
 }
 
-.footer__link-adress:focus,
-.footer__link-adress:hover {
+.footer__logo-web {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
   color: var(--blue-color);
+  text-decoration: none;
 }
 
-.footer__logo-studio.logo-studio {
+.footer__logo-studio.header__logo-studio {
   color: var(--white-color);
 }
 
@@ -578,9 +545,7 @@ img {
   background: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer__link-add:hover,
-.footer__link-add:focus {
+.footer__link-add:hover, .footer__link-add:focus {
   background-color: var(--blue-color);
 }
 
@@ -620,7 +585,6 @@ img {
   margin-right: 12px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer__input::-moz-placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -632,7 +596,6 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer__input:-ms-input-placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -644,7 +607,6 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer__input::placeholder {
   font-family: "Roboto";
   font-style: normal;
@@ -656,9 +618,7 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
-.footer__input:focus,
-.footer__input:hover {
+.footer__input:focus, .footer__input:hover {
   border-color: var(--blue-color);
 }
 
@@ -678,9 +638,7 @@ img {
   letter-spacing: 0.06em;
   color: var(--white-color);
 }
-
-.footer__btn:hover,
-.footer__btn:focus {
+.footer__btn:hover, .footer__btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -689,7 +647,6 @@ img {
   margin-left: 10px;
 }
 
-/* END of New DIV from HW6 Sign Us */
 /* Portfolio Page*/
 .main-section {
   background-color: var(--white-color);
@@ -721,9 +678,7 @@ img {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.button-portfolio:focus,
-.button-portfolio:hover {
+.button-portfolio:focus, .button-portfolio:hover {
   color: var(--white-color);
   background-color: var(--blue-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -734,16 +689,13 @@ img {
   margin-right: 0;
 }
 
-/* UL with picture*/
 .lists-blocks {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-
 .lists-blocks:nth-child(3n) {
   margin-right: 0;
 }
-
 .lists-blocks:nth-last-child(-n+3) {
   margin-bottom: 0;
 }
@@ -752,10 +704,11 @@ img {
   display: block;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.link-blocks:hover,
-.link-blocks:focus {
+.link-blocks:hover, .link-blocks:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.link-blocks:hover .text-overlay-portfolio {
+  transform: translateY(0);
 }
 
 /* ---------Overlay START----------- */
@@ -783,10 +736,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--white-color);
   /* decore end */
-}
-
-.link-blocks:hover .text-overlay-portfolio {
-  transform: translateY(0);
 }
 
 /* ------------Overlay END----------- */
@@ -819,14 +768,6 @@ img {
   color: var(--gray-color);
 }
 
-/* Modal Start */
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(0);
-  transition: opacity 250ms, visibility 250ms;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -838,6 +779,16 @@ img {
   border-radius: 4px;
   transition: opacity 250ms, visibility 250ms;
   z-index: 1;
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(0);
+  transition: opacity 250ms, visibility 250ms;
+}
+.backdrop.is-hidden .modal {
+  transform: scale(1.5);
+  transition: transform 250ms;
 }
 
 .modal {
@@ -853,34 +804,6 @@ img {
   background-color: var(--white-color);
   border-radius: 4px;
 }
-
-.backdrop.is-hidden .modal {
-  transform: scale(1.5);
-  transition: transform 250ms;
-}
-
-.close-try-button {
-  /* position */
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 8px;
-  right: 8px;
-  border-radius: 50%;
-  /* design */
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close-try-button:focus,
-.close-try-button:hover {
-  fill: var(--blue-color);
-}
-
 .modal-text {
   margin-bottom: 12px;
   font-family: "Roboto";
@@ -891,18 +814,36 @@ img {
   text-align: center;
   color: var(--brand-color);
 }
-
 .modal-field {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-
 .modal-field:last-child {
   margin-bottom: 0;
 }
-
-/* Обратить внимание что label класс не задаём! */
+.modal-type-input {
+  padding: 12px 42px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-type-input:focus {
+  border-color: var(--blue-color);
+}
+.modal-type-input:focus + .modal-svg {
+  fill: var(--blue-color);
+}
+.modal-svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-field label {
   margin-bottom: 4px;
   font-family: "Roboto";
@@ -914,34 +855,26 @@ img {
   color: var(--gray-color);
 }
 
-.name-wrap {
-  position: relative;
+.close-try-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-type-input {
-  padding: 12px 42px;
-  width: 100%;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  outline: none;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-type-input:focus {
-  border-color: var(--blue-color);
-}
-
-.modal-type-input:focus + .modal-svg {
+.close-try-button:focus, .close-try-button:hover {
   fill: var(--blue-color);
 }
 
-.modal-svg {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.name-wrap {
+  position: relative;
 }
 
 .user-comment {
@@ -956,11 +889,9 @@ img {
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .user-comment:focus {
   border-color: var(--blue-color);
 }
-
 .user-comment::-moz-placeholder {
   padding-top: 8px;
   font-weight: 400;
@@ -969,7 +900,6 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .user-comment:-ms-input-placeholder {
   padding-top: 8px;
   font-weight: 400;
@@ -978,7 +908,6 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .user-comment::placeholder {
   padding-top: 8px;
   font-weight: 400;
@@ -988,7 +917,6 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-/* Начало CHECKBOX */
 .check-box {
   display: flex;
   align-items: center;
@@ -1000,6 +928,10 @@ img {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+.check-input:checked + .check-discription .check-icon-wraper {
+  background-color: var(--blue-color);
+  border: none;
 }
 
 .check-discription {
@@ -1041,13 +973,6 @@ img {
   line-height: 1.71;
 }
 
-/* Эффект checked */
-.check-input:checked + .check-discription .check-icon-wraper {
-  background-color: var(--blue-color);
-  border: none;
-}
-
-/* Конец CHECKBOX */
 .submit-modal-button {
   display: block;
   margin: 0 auto;
@@ -1065,8 +990,6 @@ img {
   letter-spacing: 0.06em;
   color: #FFFFFF;
 }
-
-.submit-modal-button:hover,
-.submit-modal-button:focus {
+.submit-modal-button:hover, .submit-modal-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }/*# sourceMappingURL=main.css.map */

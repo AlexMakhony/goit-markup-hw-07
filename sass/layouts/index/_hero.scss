@@ -49,9 +49,9 @@
     border-radius: 4px;
     border: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background: var(--try-button-focus);
+    }
+  }
   
-  }
-  .try-button:hover,
-  .try-button:focus {
-    background: var(--try-button-focus);
-  }
