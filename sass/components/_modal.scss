@@ -49,9 +49,11 @@
         flex-direction: column;
         margin-bottom: 10px;
       }
-      &-field:last-child {
+
+      &-field:nth-child(4) {
         margin-bottom: 0;
       }
+
       &-type-input {
         padding: 12px 42px;
         width: 100%;
@@ -205,5 +207,3 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
   }
-  
-  

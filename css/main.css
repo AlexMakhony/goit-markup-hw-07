@@ -819,7 +819,7 @@ img {
   flex-direction: column;
   margin-bottom: 10px;
 }
-.modal-field:last-child {
+.modal-field:nth-child(4) {
   margin-bottom: 0;
 }
 .modal-type-input {
